@@ -1,0 +1,130 @@
+main{
+  color: #293264;
+}
+
+.blob-1, .blob-2 {
+  position: fixed;
+  width: 297px;
+  height: 235px;
+}
+
+.blob-1 {
+  border-radius: 26% 74% 40% 60% / 34% 0% 100% 66%;
+  background-color: #FFFAD1;
+}
+
+.blob-2 {
+  border-radius: 54% 32% 65% 10% / 62% 40% 51% 0%;
+  background-color: #DEEBF8;
+}
+
+.firstScreen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centeredFirstScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Karla', sans-serif;
+}
+
+.sub-title {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.start-quiz {
+  margin-top: 30px;
+  padding: 17px 30px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: #4D5B9E;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.quiz-wrapper {
+  margin: max(40px, 5%) auto;
+  width: max(800px, 50%);
+}
+
+.question-container {
+  margin-bottom: 15px;
+  border-bottom: 0.8px solid #DBDEF0;
+}
+
+.question {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  line-height: 24px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+}
+
+.options {
+  display: flex;
+  margin-top: 12px;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.optionBox {
+  min-width: min(60px, 18vw);
+  padding: 4px 8px;
+  margin-right: 12px;
+  border: 0.8px solid #4D5B9E;
+  border-radius: 8px;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.scoreCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-again{
+  margin-top: 0;
+}
+
+.score{
+  font-weight: 700;
+  font-size: clamp(0.9rem, 2.2vw, 1.3rem);
+  font-family: 'Inter',sans-serif;
+  margin-right: 20px;
+}
